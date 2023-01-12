@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env ts-node
 
 import { deployTemplate, promptConfig } from "./actions";
 import { isErrorWithMessage } from "./utils";

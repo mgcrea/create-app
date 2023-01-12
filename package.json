@@ -20,7 +20,8 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "templates"
   ],
   "bin": {
     "create-node": "./dist/index.js"
@@ -29,7 +30,8 @@
     "start": "FORCE_COLOR=1 node --experimental-specifier-resolution=node --loader=ts-node/esm/transpile-only --no-warnings --inspect src/index.ts",
     "dev": "FORCE_COLOR=1 node-dev --experimental-specifier-resolution=node --loader=ts-node/esm/transpile-only --no-warnings --inspect src/index.ts",
     "prod": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
-    "build": "rimraf dist/*; tsup src/index.ts --format cjs,esm --sourcemap --dts; cp -rf templates/ dist/",
+    "build": "rimraf dist/*; tsup src/index.ts --format cjs,esm --sourcemap --dts",
+    "postbuild": "shebang-trim dist/index.js dist/index.cjs",
     "prettify": "prettier --write src/ test/",
     "lint": "eslint src/ test/",
     "prepublishOnly": "npm run build"
@@ -51,6 +53,7 @@
     "prettier": "^2.8.2",
     "prettier-plugin-organize-imports": "^3.2.1",
     "rimraf": "^3.0.2",
+    "shebang-trim": "^1.1.0",
     "ts-node": "^10.9.1",
     "tsc-alias": "^1.8.2",
     "tsconfig-paths": "^4.1.2",
