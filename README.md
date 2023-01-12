@@ -28,8 +28,6 @@
 
 Fast scaffolding for your [Node.js](https://github.com/mgcrea/fastify-session) apps!
 
-- Support both encrypted stateless sessions and signed stateful session with an external store.
-- Relies on [sodium-native](https://github.com/sodium-friends/sodium-native) to perform crypto.
 - Built with [TypeScript](https://www.typescriptlang.org/) for static type checking with exported types along the
   library.
 
