@@ -64,8 +64,11 @@ export const deployTemplate = (config: Config) => {
 
   switch (pkgManager) {
     case "yarn":
+      console.log(`  ${pkgManager}`);
+      console.log(`  ${pkgManager} dev`);
+      break;
     case "pnpm":
-      console.log(`  ${pkgManager} `);
+      console.log(`  ${pkgManager} install`);
       console.log(`  ${pkgManager} dev`);
       break;
     default:
