@@ -21,3 +21,6 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Custom
+templates/*/pnpm-lock.yaml
