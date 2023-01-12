@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+*-debug.log*
+*-error.log*
+
+# Artefacts
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env
