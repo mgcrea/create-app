@@ -6,7 +6,9 @@
   "repository": "github:mgcrea/create-node",
   "license": "MIT",
   "type": "module",
-  "access": "public",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "require": "./dist/index.cjs",
