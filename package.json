@@ -1,0 +1,60 @@
+{
+  "name": "@mgcrea/create-node",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Olivier Louvignes <olivier@mgcrea.io>",
+  "repository": "github:mgcrea/create-node",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "create-node": "./dist/index.js"
+  },
+  "scripts": {
+    "start": "FORCE_COLOR=1 node --experimental-specifier-resolution=node --loader=ts-node/esm/transpile-only --no-warnings --inspect src/index.ts",
+    "dev": "FORCE_COLOR=1 node-dev --experimental-specifier-resolution=node --loader=ts-node/esm/transpile-only --no-warnings --inspect src/index.ts",
+    "prod": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
+    "build": "rimraf dist/*; tsup src/index.ts --format cjs,esm --sourcemap --dts; cp -rf templates/ dist/",
+    "prettify": "prettier --write src/ test/",
+    "lint": "eslint src/ test/",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@swc/core": "^1.3.26",
+    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
+    "@types/cross-spawn": "^6.0.2",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.11.18",
+    "@types/prompts": "^2.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "node-dev": "^8.0.0",
+    "prettier": "^2.8.2",
+    "prettier-plugin-organize-imports": "^3.2.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.2",
+    "tsconfig-paths": "^4.1.2",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.6.0",
+    "minimist": "^1.2.7",
+    "prompts": "^2.4.2"
+  }
+}

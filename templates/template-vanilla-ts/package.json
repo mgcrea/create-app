@@ -1,0 +1,40 @@
+{
+  "name": "mgcrea-node-typescript-starter",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "FORCE_COLOR=1 node --experimental-specifier-resolution=node --loader=ts-node/esm/transpile-only --no-warnings --inspect src/index.ts",
+    "dev": "FORCE_COLOR=1 node-dev --experimental-specifier-resolution=node --loader=ts-node/esm/transpile-only --no-warnings --inspect src/index.ts",
+    "prod": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
+    "build": "rimraf dist/*; tsc --project tsconfig.build.json && tsc-alias --project tsconfig.build.json",
+    "prettify": "prettier --write src/ test/",
+    "test": "vitest",
+    "spec": "vitest --run",
+    "lint": "eslint src/ test/",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "node-dev": "^8.0.0",
+    "prettier": "^2.8.2",
+    "prettier-plugin-organize-imports": "^3.2.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.2",
+    "tsconfig-paths": "^4.1.2",
+    "typescript": "^4.9.4",
+    "vitest": "^0.27.1"
+  },
+  "dependencies": {}
+}
