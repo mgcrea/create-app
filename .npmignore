@@ -1,1 +1,13 @@
-templates/*/node_modules
+*
+.*
+!package.json
+!LICENSE*
+!README*
+!CHANGELOG*
+!dist/**/*.cjs
+!dist/**/*.cjs.map
+!dist/**/*.js
+!dist/**/*.js.map
+!dist/**/*.d.ts
+!templates/**
+templates/**/node_modules
