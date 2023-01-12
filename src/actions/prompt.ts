@@ -28,7 +28,7 @@ export const promptConfig = async (argv: Argv): Promise<Config> => {
   const argTemplate = argv.template || argv.t;
 
   let targetDir = argTargetDir || defaultTargetDir;
-  const hasArgTemplate = argTemplate && TEMPLATE_NAMES.includes(argTemplate);
+  const hasValidArgTemplate = argTemplate ? TEMPLATE_NAMES.includes(argTemplate) : false;
 
   const getProjectName = () => (targetDir === "." ? path.basename(path.resolve()) : targetDir);
 
@@ -67,7 +67,7 @@ export const promptConfig = async (argv: Argv): Promise<Config> => {
         validate: (dir) => isValidPackageName(dir) || "Invalid package.json name",
       },
       {
-        type: hasArgTemplate ? null : "select",
+        type: hasValidArgTemplate ? null : "select",
         name: "template",
         message:
           typeof argTemplate === "string" && !TEMPLATE_NAMES.includes(argTemplate)
@@ -105,7 +105,13 @@ export const promptConfig = async (argv: Argv): Promise<Config> => {
 
   const defaults: Partial<Config> = {
     overwrite: false,
-    template: hasArgTemplate ? TEMPLATES.find(({ name }) => argTemplate === name) : undefined,
+    template: hasValidArgTemplate
+      ? TEMPLATES.find(
+          ({ name, variants }) =>
+            argTemplate === name || variants.some((variant) => argTemplate === variant.name)
+        )
+      : undefined,
+    variant: hasValidArgTemplate ? argTemplate : undefined,
     packageName: getProjectName(),
   };
 
