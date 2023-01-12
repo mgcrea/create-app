@@ -6,6 +6,7 @@
   "repository": "github:mgcrea/create-node",
   "license": "MIT",
   "type": "module",
+  "access": "public",
   "exports": {
     ".": {
       "require": "./dist/index.cjs",
@@ -16,6 +17,9 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "bin": {
     "create-node": "./dist/index.js"
   },
