@@ -28,8 +28,8 @@
     "prod": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
     "build": "rimraf dist/*; tsup src/index.ts --format cjs,esm --sourcemap --dts",
     "postbuild": "shebang-trim dist/index.js dist/index.cjs",
-    "prettify": "prettier --write src/ test/",
-    "lint": "eslint src/ test/",
+    "prettify": "prettier --write src/",
+    "lint": "eslint src/",
     "prepublishOnly": "npm run build"
   },
   "keywords": [],
