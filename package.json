@@ -28,8 +28,11 @@
     "prod": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
     "build": "rimraf dist/*; tsup src/index.ts --format cjs,esm --sourcemap --dts",
     "postbuild": "shebang-trim dist/index.js dist/index.cjs",
-    "prettify": "prettier --write src/",
-    "lint": "eslint src/",
+    "prettify": "prettier --write src/ templates/",
+    "lint": "eslint src/ templates/",
+    "prettycheck": "prettier --check src/ templates/",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run lint && npm run prettycheck && npm run typecheck",
     "prepublishOnly": "npm run build"
   },
   "keywords": [],
