@@ -51,7 +51,7 @@
     "node-dev": "^8.0.0",
     "prettier": "^2.8.2",
     "prettier-plugin-organize-imports": "^3.2.1",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.1.1",
     "shebang-trim": "^1.1.0",
     "ts-node": "^10.9.1",
     "tsc-alias": "^1.8.2",
