@@ -15,7 +15,7 @@ export const createServer = async (options: ServerOptions = {}) => {
   const app = createFastify({ logger, disableRequestLogging: true });
 
   await app.register(cors);
-  app.register(fastifyRequestLogger);
+  await app.register(fastifyRequestLogger);
 
   app.get("/", async () => {
     return {
