@@ -46,6 +46,7 @@ yarn create @mgcrea/node
 Currently supported template presets include:
 
 - `vanilla-ts`
+- `fastify-ts`
 
 ## Authors
 
