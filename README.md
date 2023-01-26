@@ -1,4 +1,4 @@
-# CreateNode
+# Create App
 
 <!-- markdownlint-disable MD033 -->
 <p align="center">
@@ -45,8 +45,9 @@ yarn create @mgcrea/app
 
 Currently supported template presets include:
 
-- `vanilla-ts`
+- `nodejs-ts`
 - `fastify-ts`
+- `react-ts`
 
 ## Authors
 
