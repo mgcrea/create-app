@@ -1,8 +1,10 @@
 {
   "git": {
-    "commitMessage": "chore(release): cut the v${version} release"
+    "commitMessage": "chore(release): cut the v${version} release",
+    "tagAnnotation": "v${version}"
   },
   "github": {
-    "release": true
+    "release": true,
+    "releaseName": "v${version}"
   }
 }

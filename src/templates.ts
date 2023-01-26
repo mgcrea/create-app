@@ -51,6 +51,18 @@ export const TEMPLATES: Template[] = [
       },
     ],
   },
+  {
+    name: "react",
+    display: "React Frontend",
+    color: cyan,
+    variants: [
+      {
+        name: "react-ts",
+        display: "TypeScript",
+        color: blue,
+      },
+    ],
+  },
 ];
 
 export const TEMPLATE_NAMES = TEMPLATES.map(({ name, variants }) =>
