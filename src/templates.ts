@@ -1,4 +1,4 @@
-import { blue, cyan, magenta, yellow } from "kolorist";
+import { blue, cyan, green, magenta, yellow } from "kolorist";
 
 export type ColorFunction = (str: string | number) => string;
 
@@ -54,7 +54,7 @@ export const TEMPLATES: Template[] = [
   {
     name: "react",
     display: "React Frontend",
-    color: cyan,
+    color: green,
     variants: [
       {
         name: "react-ts",
