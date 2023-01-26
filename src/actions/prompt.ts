@@ -8,7 +8,7 @@ import { Template, TEMPLATES, TEMPLATE_NAMES } from "../templates";
 import { formatTargetDir, isEmpty, isValidPackageName, toValidPackageName } from "../utils";
 import type { Argv } from "../utils/argv";
 
-const defaultTargetDir = "node-project";
+const defaultTargetDir = "my-app";
 
 export type Config = {
   targetDir: string;

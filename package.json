@@ -1,9 +1,9 @@
 {
-  "name": "@mgcrea/create-node",
+  "name": "@mgcrea/create-app",
   "version": "0.2.0",
   "description": "",
   "author": "Olivier Louvignes <olivier@mgcrea.io>",
-  "repository": "github:mgcrea/create-node",
+  "repository": "github:mgcrea/create-app",
   "license": "MIT",
   "type": "module",
   "publishConfig": {
@@ -20,7 +20,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "create-node": "./dist/index.js"
+    "create-app": "./dist/index.js"
   },
   "scripts": {
     "start": "FORCE_COLOR=1 node --experimental-specifier-resolution=node --loader=ts-node/esm/transpile-only --no-warnings --inspect src/index.ts",

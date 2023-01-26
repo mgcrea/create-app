@@ -2,43 +2,43 @@
 
 <!-- markdownlint-disable MD033 -->
 <p align="center">
-  <a href="https://www.npmjs.com/package/@mgcrea/create-node">
-    <img src="https://img.shields.io/npm/v/@mgcrea/create-node.svg?style=for-the-badge" alt="npm version" />
+  <a href="https://www.npmjs.com/package/@mgcrea/create-app">
+    <img src="https://img.shields.io/npm/v/@mgcrea/create-app.svg?style=for-the-badge" alt="npm version" />
   </a>
-  <a href="https://www.npmjs.com/package/@mgcrea/create-node">
-    <img src="https://img.shields.io/npm/dt/@mgcrea/create-node.svg?style=for-the-badge" alt="npm total downloads" />
+  <a href="https://www.npmjs.com/package/@mgcrea/create-app">
+    <img src="https://img.shields.io/npm/dt/@mgcrea/create-app.svg?style=for-the-badge" alt="npm total downloads" />
   </a>
-  <a href="https://www.npmjs.com/package/@mgcrea/create-node">
-    <img src="https://img.shields.io/npm/dm/@mgcrea/create-node.svg?style=for-the-badge" alt="npm monthly downloads" />
+  <a href="https://www.npmjs.com/package/@mgcrea/create-app">
+    <img src="https://img.shields.io/npm/dm/@mgcrea/create-app.svg?style=for-the-badge" alt="npm monthly downloads" />
   </a>
-  <a href="https://www.npmjs.com/package/@mgcrea/create-node">
-    <img src="https://img.shields.io/npm/l/@mgcrea/create-node.svg?style=for-the-badge" alt="npm license" />
+  <a href="https://www.npmjs.com/package/@mgcrea/create-app">
+    <img src="https://img.shields.io/npm/l/@mgcrea/create-app.svg?style=for-the-badge" alt="npm license" />
   </a>
   <br />
-  <a href="https://github.com/mgcrea/create-node/actions/workflows/main.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/mgcrea/create-node/main.yml?style=for-the-badge&branch=master" alt="build status" />
+  <a href="https://github.com/mgcrea/create-app/actions/workflows/main.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/mgcrea/create-app/main.yml?style=for-the-badge&branch=master" alt="build status" />
   </a>
-  <a href="https://depfu.com/github/mgcrea/create-node">
-    <img src="https://img.shields.io/depfu/dependencies/github/mgcrea/create-node?style=for-the-badge" alt="dependencies status" />
+  <a href="https://depfu.com/github/mgcrea/create-app">
+    <img src="https://img.shields.io/depfu/dependencies/github/mgcrea/create-app?style=for-the-badge" alt="dependencies status" />
   </a>
 </p>
 <!-- markdownlint-enable MD037 -->
 
 ## Features
 
-Fast scaffolding for your [Node.js](https://github.com/mgcrea/fastify-session) apps!
+Fast scaffolding for your [TypeScript](https://www.typescriptlang.org) apps!
 
-- Built with [TypeScript](https://www.typescriptlang.org/) for static type checking with exported types along the
+- Built with [TypeScript](https://www.typescriptlang.org) for static type checking with exported types along the
   library.
 
 ## Usage
 
 ```sh
-npm create @mgcrea/node@latest
+npm create @mgcrea/app@latest
 # or
-pnpm create @mgcrea/node
+pnpm create @mgcrea/app
 # or
-yarn create @mgcrea/node
+yarn create @mgcrea/app
 ```
 
 ## Templates

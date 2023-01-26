@@ -19,21 +19,16 @@ export type TemplateVariant = {
 export const TEMPLATES: Template[] = [
   {
     name: "vanilla",
-    display: "Vanilla",
+    display: "Vanilla Backend",
     color: yellow,
     variants: [
-      // {
-      //   name: "vanilla",
-      //   display: "JavaScript",
-      //   color: yellow,
-      // },
       {
-        name: "vanilla-ts",
+        name: "nodejs-ts",
         display: "TypeScript",
         color: blue,
       },
       {
-        name: "vanilla-lib-ts",
+        name: "nodejs-lib-ts",
         display: "TypeScript Library",
         color: magenta,
       },
@@ -41,14 +36,9 @@ export const TEMPLATES: Template[] = [
   },
   {
     name: "fastify",
-    display: "Fastify",
+    display: "Fastify Backend",
     color: cyan,
     variants: [
-      // {
-      //   name: "fastify",
-      //   display: "JavaScript",
-      //   color: yellow,
-      // },
       {
         name: "fastify-ts",
         display: "TypeScript",
