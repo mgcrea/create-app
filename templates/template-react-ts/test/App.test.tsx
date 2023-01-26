@@ -1,17 +1,15 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import App from "src/App";
-import { expect, test } from "vitest";
+import { App } from "src/App";
+import { describe, expect, test } from "vitest";
 
-test("loads and displays greeting", async () => {
-  // ARRANGE
-  render(<App />);
+describe("<App />", () => {
+  test("loads and displays greeting", async () => {
+    render(<App />);
 
-  // ACT
-  await userEvent.click(screen.getByText("Load Greeting"));
-  await screen.findByRole("heading");
+    await userEvent.click(screen.getByRole("button"));
+    await userEvent.click(screen.getByRole("button"));
 
-  // ASSERT
-  expect(screen.getByRole("heading")).toHaveTextContent("hello there");
-  expect(screen.getByRole("button")).toBeDisabled();
+    expect(screen.getByRole("button")).toHaveTextContent("count is 2");
+  });
 });
