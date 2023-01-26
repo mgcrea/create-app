@@ -1,7 +1,7 @@
 {
   "git": {
     "commitMessage": "chore(release): cut the v${version} release",
-    "tagAnnotation": "v${version}"
+    "tagAnnotation": "v${version} release"
   },
   "github": {
     "release": true,
