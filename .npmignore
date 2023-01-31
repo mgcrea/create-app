@@ -10,4 +10,5 @@
 !dist/**/*.js.map
 !dist/**/*.d.ts
 !templates/**
+templates/**/dist
 templates/**/node_modules
