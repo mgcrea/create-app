@@ -6,7 +6,16 @@
   "author": "",
   "license": "MIT",
   "type": "module",
-  "main": "src/index.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "start": "tsx src/index.ts",
     "dev": "tsx --inspect --watch src/index.ts",
