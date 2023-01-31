@@ -1,5 +1,5 @@
 {
-  "name": "my-react-app",
+  "name": "create-react-ts",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,9 +7,14 @@
     "start": "vite",
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "vitest",
+    "preview": "vite preview",
+    "prettify": "prettier --write src/ test/",
+    "spec": "vitest --run",
     "lint": "eslint src/ test/",
-    "preview": "vite preview"
+    "prettycheck": "prettier --check src/ test/",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run lint && npm run prettycheck && npm run typecheck && npm run spec",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -23,20 +28,20 @@
     "@tsconfig/vite-react": "^1.0.1",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
-    "@typescript-eslint/eslint-plugin": "^5.49.0",
-    "@typescript-eslint/parser": "^5.49.0",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
     "@vitejs/plugin-react-swc": "^3.0.1",
-    "eslint": "^8.32.0",
+    "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^5.10.0",
-    "happy-dom": "^8.1.5",
+    "happy-dom": "^8.2.2",
     "prettier": "^2.8.3",
     "prettier-plugin-organize-imports": "^3.2.2",
-    "typescript": "^4.9.4",
+    "typescript": "^4.9.5",
     "vite": "^4.0.4",
-    "vitest": "^0.28.2"
+    "vitest": "^0.28.3"
   }
 }
