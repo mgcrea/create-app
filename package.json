@@ -33,6 +33,7 @@
     "prettycheck": "prettier --check src/ templates/",
     "typecheck": "tsc --noEmit",
     "test": "npm run lint && npm run prettycheck && npm run typecheck",
+    "clean": "scripts/run.sh 'rm -rf node_modules pnpm-lock.yaml; pnpm i'",
     "prepublishOnly": "npm run build"
   },
   "keywords": [],
