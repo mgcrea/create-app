@@ -1,0 +1,39 @@
+{
+  "name": "create-nodejs-lib-ts",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx --inspect --watch src/index.ts",
+    "build": "tsup src/index.ts --format cjs,esm --sourcemap --dts --clean",
+    "preview": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
+    "prettify": "prettier --write src/ test/",
+    "spec": "vitest --run",
+    "lint": "eslint src/ test/",
+    "prettycheck": "prettier --check src/ test/",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run lint && npm run prettycheck && npm run typecheck && npm run spec",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.3",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "rimraf": "^4.1.2",
+    "tsup": "^6.5.0",
+    "tsx": "^3.12.2",
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.3"
+  }
+}
