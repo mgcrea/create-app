@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/node-lts-strictest-esm",
+  "extends": "@tsconfig/node-lts-strictest-esm/tsconfig.json",
   "compilerOptions": {
     "declaration": true,
     "resolveJsonModule": true,
@@ -9,9 +9,6 @@
       "src/*": ["src/*"],
       "test/*": ["test/*"]
     }
-  },
-  "ts-node": {
-    "swc": true
   },
   "include": ["src", "test"]
 }
