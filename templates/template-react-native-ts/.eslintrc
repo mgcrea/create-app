@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": "@react-native-community",
+  "rules": {
+    "@typescript-eslint/no-shadow": "off",
+    "react/react-in-jsx-scope": "off",
+    "quotes": ["warn", "double", { "avoidEscape": true, "allowTemplateLiterals": true }]
+  }
+}
