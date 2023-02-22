@@ -63,6 +63,18 @@ export const TEMPLATES: Template[] = [
       },
     ],
   },
+  {
+    name: "react-native",
+    display: "React Native Application",
+    color: green,
+    variants: [
+      {
+        name: "react-native-ts",
+        display: "TypeScript",
+        color: blue,
+      },
+    ],
+  },
 ];
 
 export const TEMPLATE_NAMES = TEMPLATES.map(({ name, variants }) =>
