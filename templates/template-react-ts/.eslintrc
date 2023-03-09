@@ -1,4 +1,5 @@
 {
   "extends": ["@mgcrea/react"],
+  "ignorePatterns": ["dist/"],
   "root": true
 }
