@@ -48,6 +48,7 @@ Currently supported template presets include:
 - `nodejs-ts`
 - `fastify-ts`
 - `react-ts`
+- `react-native-ts`
 
 ## Authors
 
