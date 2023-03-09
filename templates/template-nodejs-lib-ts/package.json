@@ -30,7 +30,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@mgcrea/eslint-config-node": "^0.2.0",
+    "@mgcrea/eslint-config-node": "^0.2.2",
     "@tsconfig/node-lts-strictest-esm": "^18.12.1",
     "@types/node": "^18.14.6",
     "eslint": "^8.35.0",

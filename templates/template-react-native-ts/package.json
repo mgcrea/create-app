@@ -19,7 +19,7 @@
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",
     "@babel/runtime": "^7.21.0",
-    "@mgcrea/eslint-config-react-native": "^0.2.0",
+    "@mgcrea/eslint-config-react-native": "^0.2.2",
     "@testing-library/jest-native": "^5.4.2",
     "@testing-library/react-native": "^11.5.4",
     "@tsconfig/react-native": "^2.0.3",
