@@ -9,10 +9,10 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prettify": "prettier --write src/ test/",
-    "spec": "vitest --run",
     "lint": "eslint src/ test/",
     "prettycheck": "prettier --check src/ test/",
     "typecheck": "tsc --noEmit",
+    "spec": "vitest --run",
     "test": "npm run lint && npm run prettycheck && npm run typecheck && npm run spec",
     "prepublishOnly": "npm run build"
   },
@@ -21,7 +21,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@mgcrea/eslint-config-react": "^0.2.2",
+    "@mgcrea/eslint-config-react": "^0.2.3",
     "@testing-library/dom": "^9.0.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
@@ -30,12 +30,12 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react-swc": "^3.2.0",
-    "eslint": "^8.35.0",
+    "eslint": "^8.36.0",
     "happy-dom": "^8.9.0",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.5",
     "prettier-plugin-organize-imports": "^3.2.2",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.4",
-    "vitest": "^0.29.2"
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1",
+    "vitest": "^0.29.5"
   }
 }
