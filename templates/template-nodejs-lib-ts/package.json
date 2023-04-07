@@ -32,7 +32,9 @@
   },
   "devDependencies": {
     "@mgcrea/eslint-config-node": "^0.2.3",
-    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
+    "@tsconfig/esm": "^1.0.2",
+    "@tsconfig/node-lts": "^18.12.1",
+    "@tsconfig/strictest": "^2.0.0",
     "@types/node": "^18.15.11",
     "eslint": "^8.37.0",
     "prettier": "^2.8.7",
