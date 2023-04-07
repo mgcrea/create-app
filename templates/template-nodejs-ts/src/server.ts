@@ -1,4 +1,4 @@
-import http, { RequestListener } from "node:http";
+import http, { type RequestListener } from "node:http";
 import { PACKAGE_NAME, PACKAGE_VERSION } from "./config";
 
 export type ServerOptions = {
