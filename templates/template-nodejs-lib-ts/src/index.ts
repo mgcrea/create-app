@@ -1,4 +1,4 @@
-import { bar } from "src/utils/foo";
+import { bar } from "src/utils";
 
 const hello = () => `${bar()}world`;
 console.log(hello());
