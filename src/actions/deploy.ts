@@ -5,6 +5,7 @@ import { copy, emptyDir, pkgFromUserAgent } from "../utils";
 import type { Config } from "./prompt";
 
 const cwd = process.cwd();
+const __filename = fileURLToPath(import.meta.url);
 
 const renameFiles: Record<string, string | undefined> = {
   _gitignore: ".gitignore",
@@ -28,11 +29,7 @@ export const deployTemplate = (config: Config) => {
   console.log(`\nScaffolding project in ${root}...`);
 
   const templateName = variant || template.name;
-  const templateDir = path.resolve(
-    fileURLToPath(import.meta.url),
-    "../../templates",
-    `template-${templateName}`
-  );
+  const templateDir = path.resolve(__filename, "../../templates", `template-${templateName}`);
 
   const write = (file: string, content?: string) => {
     const targetPath = path.join(root, renameFiles[file] ?? file);

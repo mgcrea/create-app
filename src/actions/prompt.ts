@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 // import { fileURLToPath } from "node:url";
 import prompts from "prompts";
-import { Template, TEMPLATES, TEMPLATE_NAMES } from "../templates";
+import { TEMPLATES, TEMPLATE_NAMES, type Template } from "../templates";
 import { formatTargetDir, isEmpty, isValidPackageName, toValidPackageName } from "../utils";
 import type { Argv } from "../utils/argv";
 

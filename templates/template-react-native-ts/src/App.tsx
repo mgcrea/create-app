@@ -1,5 +1,5 @@
 import { FunctionComponent, useState } from "react";
-import { Button, SafeAreaView, ScrollView, StyleSheet, Text, useColorScheme, View } from "react-native";
+import { Button, SafeAreaView, ScrollView, StyleSheet, Text, View, useColorScheme } from "react-native";
 import {
   Colors,
   DebugInstructions,

@@ -1,5 +1,5 @@
 import React, { FunctionComponent, PropsWithChildren } from "react";
-import { StyleSheet, Text, useColorScheme, View } from "react-native";
+import { StyleSheet, Text, View, useColorScheme } from "react-native";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
 export type SectionProps = { title: string };
