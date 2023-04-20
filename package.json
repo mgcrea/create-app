@@ -39,6 +39,7 @@
   "keywords": [],
   "devDependencies": {
     "@mgcrea/eslint-config-node": "^0.4.2",
+    "@mgcrea/eslint-config-react": "^0.4.2",
     "@mgcrea/eslint-config-react-native": "^0.4.2",
     "@tsconfig/esm": "^1.0.2",
     "@tsconfig/node-lts": "^18.12.1",
