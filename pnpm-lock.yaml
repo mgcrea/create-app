@@ -17,6 +17,9 @@ importers:
       '@mgcrea/eslint-config-node':
         specifier: ^0.4.2
         version: 0.4.2(eslint@8.38.0)(prettier@2.8.7)(typescript@5.0.4)
+      '@mgcrea/eslint-config-react':
+        specifier: ^0.4.2
+        version: 0.4.2(eslint@8.38.0)(prettier@2.8.7)(typescript@5.0.4)
       '@mgcrea/eslint-config-react-native':
         specifier: ^0.4.2
         version: 0.4.2(eslint@8.38.0)(prettier@2.8.7)(typescript@5.0.4)
@@ -2843,6 +2846,24 @@ packages:
       eslint-plugin-react: 7.32.2(eslint@8.36.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.36.0)
       eslint-plugin-testing-library: 5.10.2(eslint@8.36.0)(typescript@5.0.2)
+    transitivePeerDependencies:
+      - eslint
+      - prettier
+      - supports-color
+      - typescript
+    dev: true
+
+  /@mgcrea/eslint-config-react@0.4.2(eslint@8.38.0)(prettier@2.8.7)(typescript@5.0.4):
+    resolution: {integrity: sha512-n92CoIBuYrXNPAvNVz6ZoIsLr1XZpvPxxxWXz6Xmp736U+a70CO9KLYz9Telo1fVqABb1SxSnkoO4llhBDJcJg==}
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 5.59.0(@typescript-eslint/parser@5.59.0)(eslint@8.38.0)(typescript@5.0.4)
+      '@typescript-eslint/parser': 5.59.0(eslint@8.38.0)(typescript@5.0.4)
+      eslint-config-prettier: 8.8.0(eslint@8.38.0)
+      eslint-plugin-prettier: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.38.0)(prettier@2.8.7)
+      eslint-plugin-react: 7.32.2(eslint@8.38.0)
+      eslint-plugin-react-hooks: 4.6.0(eslint@8.38.0)
+      eslint-plugin-testing-library: 5.10.3(eslint@8.38.0)(typescript@5.0.4)
+      eslint-plugin-vitest: 0.1.4(eslint@8.38.0)(typescript@5.0.4)
     transitivePeerDependencies:
       - eslint
       - prettier
