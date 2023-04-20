@@ -6,10 +6,22 @@
   "author": "",
   "license": "MIT",
   "type": "module",
-  "main": "src/index.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "tsx src/index.ts",
-    "dev": "tsx --inspect --watch src/index.ts",
+    "dev": "tsx watch --inspect src/index.ts",
     "build": "tsup src/index.ts --format esm --sourcemap --dts --clean",
     "preview": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
     "prettify": "prettier --write src/ test/",
@@ -27,11 +39,11 @@
     "fastify": "^4.15.0"
   },
   "devDependencies": {
-    "@mgcrea/eslint-config-node": "^0.3.0",
+    "@mgcrea/eslint-config-node": "^0.4.2",
     "@tsconfig/esm": "^1.0.2",
     "@tsconfig/node-lts": "^18.12.1",
     "@tsconfig/strictest": "^2.0.0",
-    "@types/node": "^18.15.11",
+    "@types/node": "^18.15.12",
     "eslint": "^8.38.0",
     "prettier": "^2.8.7",
     "prettier-plugin-organize-imports": "^3.2.2",
