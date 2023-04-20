@@ -43,7 +43,6 @@
     "@tsconfig/esm": "^1.0.2",
     "@tsconfig/node-lts": "^18.12.1",
     "@tsconfig/strictest": "^2.0.0",
-    "@types/cross-spawn": "^6.0.2",
     "@types/minimist": "^1.2.2",
     "@types/node": "^18.15.12",
     "@types/prompts": "^2.4.4",
@@ -57,7 +56,6 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "cross-spawn": "^7.0.3",
     "kolorist": "^1.7.0",
     "minimist": "^1.2.8",
     "prompts": "^2.4.2"
