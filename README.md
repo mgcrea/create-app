@@ -36,7 +36,7 @@ Fast scaffolding for your [TypeScript](https://www.typescriptlang.org) apps!
 ```sh
 npm create @mgcrea/app@latest
 # or
-pnpm create @mgcrea/app
+pnpm create @mgcrea/app@latest
 # or
 yarn create @mgcrea/app
 ```
