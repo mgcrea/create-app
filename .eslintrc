@@ -1,3 +1,4 @@
 {
-  "extends": ["@mgcrea/node"]
+  "extends": ["@mgcrea/node"],
+  "root": true
 }
