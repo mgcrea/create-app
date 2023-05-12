@@ -1,4 +1,4 @@
-import { FunctionComponent, PropsWithChildren } from "react";
+import React, { FunctionComponent, PropsWithChildren } from "react";
 import { StyleSheet, Text, View, useColorScheme } from "react-native";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
