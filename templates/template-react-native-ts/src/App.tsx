@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from "react";
+import React, { FunctionComponent, useState } from "react";
 import { Button, SafeAreaView, ScrollView, StyleSheet, Text, View, useColorScheme } from "react-native";
 import {
   Colors,
