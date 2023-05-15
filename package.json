@@ -27,6 +27,7 @@
     "dev": "FORCE_COLOR=1 tsx --inspect --watch --no-warnings src/index.ts",
     "build": "rimraf dist/*; tsup src/index.ts --format cjs,esm --sourcemap --dts",
     "preview": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
+    "postinstall": "scripts/runTemplates.sh 'pnpm install'",
     "postbuild": "shebang-trim dist/index.js dist/index.cjs",
     "prettify": "prettier --write src/ templates/",
     "lint": "eslint src/ && scripts/runTemplates.sh 'npm run lint'",
