@@ -41,7 +41,8 @@ export const deployTemplate = (config: Config) => {
   };
 
   const files = fs.readdirSync(templateDir);
-  for (const file of files.filter((f) => f !== "package.json")) {
+  const filesToCopy = files.filter((f) => !["package.json", "pnpm-lock.yaml"].includes(f));
+  for (const file of filesToCopy) {
     write(file);
   }
 
