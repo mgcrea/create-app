@@ -9,7 +9,9 @@
     "prettify": "prettier --write src/ test/",
     "spec": "jest",
     "lint": "eslint src/ test/",
-    "test": "npm run lint && npm run spec"
+    "prettycheck": "prettier --check src/ test/",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run lint && npm run prettycheck && npm run typecheck && npm run spec"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -20,7 +22,7 @@
     "@babel/preset-env": "^7.21.5",
     "@babel/runtime": "^7.21.5",
     "@jest/globals": "^29.5.0",
-    "@mgcrea/eslint-config-react-native": "^0.4.2",
+    "@mgcrea/eslint-config-react-native": "^0.4.3",
     "@react-native/metro-config": "^0.72.5",
     "@testing-library/jest-native": "^5.4.2",
     "@testing-library/react-native": "^12.1.2",
