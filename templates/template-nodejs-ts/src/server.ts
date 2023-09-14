@@ -16,7 +16,7 @@ export const createServer = async (options: ServerOptions = {}) => {
         name: PACKAGE_NAME,
         version: PACKAGE_VERSION,
         data: "Hello 🌎!",
-      })
+      }),
     );
   };
 

@@ -21,22 +21,22 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@mgcrea/eslint-config-react": "^0.6.1",
-    "@testing-library/dom": "^9.3.0",
-    "@testing-library/jest-dom": "^5.16.5",
+    "@mgcrea/eslint-config-react": "^0.8.1",
+    "@testing-library/dom": "^9.3.1",
+    "@testing-library/jest-dom": "^6.1.3",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@tsconfig/vite-react": "^2.0.0",
-    "@types/react": "^18.2.11",
-    "@types/react-dom": "^18.2.4",
-    "@types/testing-library__jest-dom": "^5.14.6",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/testing-library__jest-dom": "^5.14.9",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "eslint": "^8.42.0",
-    "happy-dom": "^9.20.3",
-    "prettier": "^2.8.8",
-    "prettier-plugin-organize-imports": "^3.2.2",
-    "typescript": "^5.1.3",
-    "vite": "^4.3.9",
-    "vitest": "^0.32.0"
+    "eslint": "^8.49.0",
+    "happy-dom": "^11.0.6",
+    "prettier": "^3.0.3",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.4"
   }
 }
