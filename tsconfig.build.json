@@ -1,14 +1,8 @@
 {
-  "extends": "@tsconfig/node-lts-strictest-esm",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "declaration": true,
-    "resolveJsonModule": true,
     "rootDir": "./src",
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "paths": {
-      "src/*": ["src/*"]
-    }
+    "outDir": "./dist"
   },
   "include": ["src"]
 }

@@ -1,21 +1,14 @@
 {
-  "extends": [
-    "@tsconfig/node-lts/tsconfig.json",
-    "@tsconfig/strictest/tsconfig.json",
-    "@tsconfig/esm/tsconfig.json"
-  ],
+  "extends": ["@tsconfig/node-lts/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
   "compilerOptions": {
-    "declaration": true,
-    "resolveJsonModule": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
-      "src/*": ["src/*"],
-      "test/*": ["test/*"]
+      "src/*": ["./src/*"],
+      "test/*": ["./test/*"]
     }
-  },
-  "ts-node": {
-    "swc": true
   },
   "include": ["src", "test"]
 }

@@ -12,8 +12,7 @@
   "exports": {
     ".": {
       "require": "./dist/index.cjs",
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.js"
     }
   },
   "main": "./dist/index.cjs",
@@ -25,7 +24,7 @@
   "scripts": {
     "start": "FORCE_COLOR=1 tsx src/index.ts",
     "dev": "FORCE_COLOR=1 tsx --inspect --watch --no-warnings src/index.ts",
-    "build": "rimraf dist/*; tsup src/index.ts --format cjs,esm --sourcemap --dts",
+    "build": "rimraf dist/*; tsup src/index.ts --format cjs,esm --sourcemap --dts --shims",
     "preview": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
     "setup": "scripts/runTemplates.sh 'pnpm install'",
     "postbuild": "shebang-trim dist/index.js dist/index.cjs",
@@ -38,22 +37,21 @@
   },
   "keywords": [],
   "devDependencies": {
-    "@mgcrea/eslint-config-node": "^0.6.1",
-    "@tsconfig/esm": "^1.0.3",
-    "@tsconfig/node-lts": "^18.12.2",
-    "@tsconfig/strictest": "^2.0.1",
+    "@mgcrea/eslint-config-node": "^0.8.1",
+    "@tsconfig/node-lts": "^18.12.5",
+    "@tsconfig/strictest": "^2.0.2",
     "@types/minimist": "^1.2.2",
-    "@types/node": "^18.16.17",
+    "@types/node": "^18.17.15",
     "@types/prompts": "^2.4.4",
-    "eslint": "^8.42.0",
-    "prettier": "^2.8.8",
-    "prettier-plugin-organize-imports": "^3.2.2",
-    "release-it": "^15.11.0",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "release-it": "^16.1.5",
     "rimraf": "^5.0.1",
     "shebang-trim": "^1.2.0",
-    "tsup": "^6.7.0",
-    "tsx": "^3.12.7",
-    "typescript": "^5.1.3"
+    "tsup": "^7.2.0",
+    "tsx": "^3.12.10",
+    "typescript": "^5.2.2"
   },
   "dependencies": {
     "kolorist": "^1.8.0",
