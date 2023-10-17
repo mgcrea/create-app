@@ -1,0 +1,47 @@
+{
+  "name": "create-nodejs-ts",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun build src/index.ts --target node --outdir dist/",
+    "compile": "bun build src/index.ts --outfile dist/app --compile",
+    "preview": "bun dist/index.js",
+    "prettify": "prettier --write src/ test/",
+    "lint": "eslint src/ test/",
+    "prettycheck": "prettier --check src/ test/",
+    "typecheck": "tsc --noEmit",
+    "spec": "bun test",
+    "test": "npm run lint && npm run prettycheck && npm run typecheck && npm run spec",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "hono": "^3.8.0"
+  },
+  "devDependencies": {
+    "@mgcrea/eslint-config-node": "^0.8.3",
+    "@tsconfig/node-lts": "^18.12.5",
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/node": "^18.18.5",
+    "bun-types": "^1.0.6",
+    "eslint": "^8.51.0",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}

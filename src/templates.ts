@@ -1,4 +1,4 @@
-import { blue, cyan, green, magenta, yellow } from "kolorist";
+import { blue, cyan, green, lightRed, magenta, yellow } from "kolorist";
 
 export type ColorFunction = (str: string | number) => string;
 
@@ -52,6 +52,18 @@ export const TEMPLATES: Template[] = [
     ],
   },
   {
+    name: "hono",
+    display: "Hono Backend",
+    color: lightRed,
+    variants: [
+      {
+        name: "hono-ts",
+        display: "TypeScript",
+        color: blue,
+      },
+    ],
+  },
+  {
     name: "react",
     display: "React Frontend",
     color: green,
@@ -78,5 +90,5 @@ export const TEMPLATES: Template[] = [
 ];
 
 export const TEMPLATE_NAMES = TEMPLATES.map(({ name, variants }) =>
-  variants ? variants.map(({ name }) => name) : [name]
+  variants ? variants.map(({ name }) => name) : [name],
 ).reduce((soFar, value) => soFar.concat(value), []);
