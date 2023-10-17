@@ -57,8 +57,13 @@ export const TEMPLATES: Template[] = [
     color: lightRed,
     variants: [
       {
-        name: "hono-ts",
-        display: "TypeScript",
+        name: "hono-bun-ts",
+        display: "Bun & TypeScript",
+        color: blue,
+      },
+      {
+        name: "hono-nodejs-ts",
+        display: "Node.js & TypeScript",
         color: blue,
       },
     ],
