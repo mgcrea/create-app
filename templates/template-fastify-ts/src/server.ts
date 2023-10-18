@@ -1,21 +1,22 @@
 import cors from "@fastify/cors";
+import fastifyGracefulExit from "@mgcrea/fastify-graceful-exit";
 import fastifyRequestLogger from "@mgcrea/fastify-request-logger";
-import createFastify, { type FastifyServerOptions } from "fastify";
+import createFastify, { FastifyListenOptions, type FastifyServerOptions } from "fastify";
 import type { RequestListener } from "node:http";
-import { DEFAULT_LOGGER, PACKAGE_NAME, PACKAGE_VERSION } from "./config";
+import { DEFAULT_LOGGER, NODE_HOST, NODE_PORT, PACKAGE_NAME, PACKAGE_VERSION } from "./config";
 
-export type ServerOptions = FastifyServerOptions & {
-  port?: number;
-};
+export type ServerOptions = FastifyServerOptions & Pick<FastifyListenOptions, "host" | "port">;
 
 export const createServer = async (options: ServerOptions = {}) => {
-  const port = options.port ?? 3000;
+  const host = options.host ?? NODE_HOST;
+  const port = options.port ?? NODE_PORT;
   const logger = options.logger ?? DEFAULT_LOGGER;
 
   const app = createFastify({ logger, disableRequestLogging: true });
 
   await app.register(cors);
   await app.register(fastifyRequestLogger);
+  await app.register(fastifyGracefulExit, { timeout: 3000 });
 
   app.get("/", async () => {
     return {
@@ -31,7 +32,7 @@ export const createServer = async (options: ServerOptions = {}) => {
         await app.ready();
         return;
       }
-      await app.listen({ port });
+      await app.listen({ host, port });
       return app.server;
     } catch (err) {
       console.error(err);

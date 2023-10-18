@@ -8,6 +8,9 @@ dependencies:
   '@fastify/cors':
     specifier: ^8.4.0
     version: 8.4.0
+  '@mgcrea/fastify-graceful-exit':
+    specifier: ^1.1.1
+    version: 1.1.1
   '@mgcrea/fastify-request-logger':
     specifier: ^1.3.0
     version: 1.3.0
@@ -401,6 +404,12 @@ packages:
       - typescript
       - vitest
     dev: true
+
+  /@mgcrea/fastify-graceful-exit@1.1.1:
+    resolution: {integrity: sha512-0E1NwBg0J7DHDgJlb6mvqgCe0TfsyyZhnrQCbT+hrKL0USyUJRgAlyEMIdUqWJt6jrNbRrv8y2OSqL1twxKi/g==}
+    dependencies:
+      fastify-plugin: 4.5.1
+    dev: false
 
   /@mgcrea/fastify-request-logger@1.3.0:
     resolution: {integrity: sha512-E3vlTeAOF4aw2wDNa0SEu3RLNg7kp2sIPiocKqScbbap9HRhhlbsmr9yyZHJcKmgtCDkfeZ1JaSIt4V9gVIC4Q==}
