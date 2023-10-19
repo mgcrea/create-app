@@ -39,12 +39,9 @@ export const createServer = async (options: ServerOptions = {}) => {
       process.exit(1);
     }
   };
-  const stop = () => {
-    app.close();
-  };
   const handler: RequestListener = (request, reply) => {
     app.server.emit("request", request, reply);
   };
 
-  return { app, start, stop, handler };
+  return { app, start, handler };
 };
