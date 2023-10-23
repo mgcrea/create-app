@@ -69,6 +69,10 @@ export const deployTemplate = (config: Config) => {
       console.log(`  ${pkgManager} install`);
       console.log(`  ${pkgManager} dev`);
       break;
+    case "bun":
+      console.log(`  ${pkgManager} install`);
+      console.log(`  ${pkgManager} dev`);
+      break;
     default:
       console.log(`  ${pkgManager} install`);
       console.log(`  ${pkgManager} run dev`);
