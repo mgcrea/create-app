@@ -24,3 +24,4 @@ dist-ssr
 
 # Custom
 node-project/
+templates/*/pnpm-lock.yaml
