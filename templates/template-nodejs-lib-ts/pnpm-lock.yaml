@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@mgcrea/eslint-config-node':
-    specifier: ^0.9.1
-    version: 0.9.1(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3)(vitest@1.0.3)
+    specifier: ^0.9.3
+    version: 0.9.3(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3)(vitest@1.0.3)
   '@tsconfig/node-lts':
     specifier: ^18.12.5
     version: 18.12.5
@@ -554,8 +554,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@mgcrea/eslint-config-node@0.9.1(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3)(vitest@1.0.3):
-    resolution: {integrity: sha512-DtD2Y1cg51J2ivoulGk6yt/uFOe/B26E1QZFogpnKYnNDNHu9yICiwLO9T6efixbQ+k0UjbK2LBmrqjydTvi0g==}
+  /@mgcrea/eslint-config-node@0.9.3(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3)(vitest@1.0.3):
+    resolution: {integrity: sha512-dbekPnPftFXx4bAOYRn0MM4N5zQQETzsO79PUE3yVVf/L3JA0LB1F2TqTzOQ4g2M37E4vLqaArxBsiNbd+HFFg==}
     dependencies:
       '@typescript-eslint/eslint-plugin': 6.13.2(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 6.13.2(eslint@8.55.0)(typescript@5.3.3)

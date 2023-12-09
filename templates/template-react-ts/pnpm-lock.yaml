@@ -14,8 +14,8 @@ dependencies:
 
 devDependencies:
   '@mgcrea/eslint-config-react':
-    specifier: ^0.9.1
-    version: 0.9.1(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3)(vitest@1.0.3)
+    specifier: ^0.9.3
+    version: 0.9.3(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3)(vitest@1.0.3)
   '@testing-library/dom':
     specifier: ^9.3.3
     version: 9.3.3
@@ -390,8 +390,8 @@ packages:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
     dev: true
 
-  /@mgcrea/eslint-config-react@0.9.1(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3)(vitest@1.0.3):
-    resolution: {integrity: sha512-dGctQMyRUmP6FNp9vZ/v9Qgf0uWc8iodmoXfK7UKrlpRgeZ8KtMODVTXlbVZCXojLi7TUkxt8aFQdS6Q4dhn7A==}
+  /@mgcrea/eslint-config-react@0.9.3(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3)(vitest@1.0.3):
+    resolution: {integrity: sha512-803djkCwj8kYyrK8yg4LmlPhRqCQgnGUaAluDw9Ite9eMQl5q7YNwFnEMT0SeD17tAhCOuNaAO5QoJ7yM3VJkA==}
     dependencies:
       '@typescript-eslint/eslint-plugin': 6.13.2(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 6.13.2(eslint@8.55.0)(typescript@5.3.3)

@@ -21,7 +21,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@mgcrea/eslint-config-react": "^0.9.1",
+    "@mgcrea/eslint-config-react": "^0.9.3",
     "@testing-library/dom": "^9.3.3",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",

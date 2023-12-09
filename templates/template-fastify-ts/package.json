@@ -38,7 +38,7 @@
     "fastify": "^4.24.3"
   },
   "devDependencies": {
-    "@mgcrea/eslint-config-node": "^0.9.1",
+    "@mgcrea/eslint-config-node": "^0.9.3",
     "@tsconfig/node-lts": "^18.12.5",
     "@tsconfig/strictest": "^2.0.2",
     "@types/node": "^20.10.4",

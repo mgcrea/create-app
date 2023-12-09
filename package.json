@@ -37,7 +37,7 @@
   },
   "keywords": [],
   "devDependencies": {
-    "@mgcrea/eslint-config-node": "^0.9.1",
+    "@mgcrea/eslint-config-node": "^0.9.3",
     "@tsconfig/node-lts": "^18.12.5",
     "@tsconfig/strictest": "^2.0.2",
     "@types/minimist": "^1.2.5",

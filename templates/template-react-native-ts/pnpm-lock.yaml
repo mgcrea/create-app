@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^29.7.0
     version: 29.7.0
   '@mgcrea/eslint-config-react-native':
-    specifier: ^0.9.1
-    version: 0.9.1(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3)
+    specifier: ^0.9.3
+    version: 0.9.3(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3)
   '@react-native/metro-config':
     specifier: ^0.74.0
     version: 0.74.0(@babel/core@7.23.5)(@babel/preset-env@7.23.5)
@@ -1759,8 +1759,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@mgcrea/eslint-config-react-native@0.9.1(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-m9ewwPXOIQspaGVzqxglyeha4azxIHlYRFwB0QI0MWY7ipnYE6ake+JbD/iZVzzigXK9r8Ht4FSa3voDPibxlg==}
+  /@mgcrea/eslint-config-react-native@0.9.3(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-9eNs+27XHtMalMBMV4J0qHZkV5Nt/f5BrfINN7wNutfkEYaxVtVfFsfYj+GZE3oRS4KrlWVSk5LYMzDqiqSiKQ==}
     dependencies:
       '@react-native/eslint-plugin': 0.74.0
       '@typescript-eslint/eslint-plugin': 6.13.2(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.3)
