@@ -27,6 +27,8 @@ export const promptConfig = async (argv: Argv): Promise<Config> => {
   const argTargetDir = formatTargetDir(argv._[0]);
   const argTemplate = argv.template || argv.t;
 
+  console.dir({ argTargetDir, argTemplate });
+
   let targetDir = argTargetDir || defaultTargetDir;
   const hasValidArgTemplate = argTemplate ? TEMPLATE_NAMES.includes(argTemplate) : false;
 
@@ -100,7 +102,7 @@ export const promptConfig = async (argv: Argv): Promise<Config> => {
       onCancel: () => {
         throw new Error(red("✖") + " Operation cancelled");
       },
-    }
+    },
   );
 
   const defaults: Partial<Config> = {
@@ -108,7 +110,7 @@ export const promptConfig = async (argv: Argv): Promise<Config> => {
     template: hasValidArgTemplate
       ? TEMPLATES.find(
           ({ name, variants }) =>
-            argTemplate === name || variants.some((variant) => argTemplate === variant.name)
+            argTemplate === name || variants.some((variant) => argTemplate === variant.name),
         )
       : undefined,
     variant: hasValidArgTemplate ? argTemplate : undefined,

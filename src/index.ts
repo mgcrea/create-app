@@ -4,6 +4,8 @@ import { deployTemplate, promptConfig } from "./actions";
 import { isErrorWithMessage } from "./utils";
 import { argv } from "./utils/argv";
 
+console.dir({ argv });
+
 const main = async () => {
   const config = await promptConfig(argv);
   await deployTemplate(config);

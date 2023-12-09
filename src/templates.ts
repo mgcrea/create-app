@@ -81,9 +81,21 @@ export const TEMPLATES: Template[] = [
     ],
   },
   {
+    name: "astro",
+    display: "Astro Website",
+    color: blue,
+    variants: [
+      {
+        name: "astro-ts",
+        display: "TypeScript",
+        color: green,
+      },
+    ],
+  },
+  {
     name: "react-native",
-    display: "React Native Application",
-    color: green,
+    display: "React Native App",
+    color: magenta,
     variants: [
       {
         name: "react-native-ts",

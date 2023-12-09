@@ -6,6 +6,7 @@ import type { Config } from "./prompt";
 
 const cwd = process.cwd();
 const __filename = fileURLToPath(import.meta.url);
+const IS_PROD = process.env["NODE_ENV"] === "production";
 
 const renameFiles: Record<string, string | undefined> = {
   _gitignore: ".gitignore",
@@ -29,7 +30,12 @@ export const deployTemplate = (config: Config) => {
   console.log(`\nScaffolding project in ${root}...`);
 
   const templateName = variant || template.name;
-  const templateDir = path.resolve(__filename, "../../templates", `template-${templateName}`);
+  const templateDir = path.resolve(
+    __filename,
+    IS_PROD ? "../../" : "../../../",
+    "templates",
+    `template-${templateName}`,
+  );
 
   const write = (file: string, content?: string) => {
     const targetPath = path.join(root, renameFiles[file] ?? file);
@@ -46,10 +52,13 @@ export const deployTemplate = (config: Config) => {
     write(file);
   }
 
-  const pkg = JSON.parse(fs.readFileSync(path.join(templateDir, `package.json`), "utf-8"));
-  pkg.name = packageName;
-  // @TODO "access": "public" if scoped
-  write("package.json", JSON.stringify(pkg, null, 2));
+  const pkgJsonFilePath = path.join(templateDir, `package.json`);
+  if (fs.existsSync(pkgJsonFilePath)) {
+    const pkg = JSON.parse(fs.readFileSync(pkgJsonFilePath, "utf-8"));
+    pkg.name = packageName;
+    // @TODO "access": "public" if scoped
+    write("package.json", JSON.stringify(pkg, null, 2));
+  }
 
   // spawn.sync("sh", ["-c", `${root !== cwd ? `cd ${path.relative(cwd, root)}; ` : ""}git init`], {
   //   stdio: "inherit",
