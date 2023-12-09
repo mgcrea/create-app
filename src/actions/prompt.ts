@@ -12,7 +12,7 @@ const defaultTargetDir = "my-app";
 
 export type Config = {
   targetDir: string;
-  overwrite: boolean;
+  overwrite: "ignore" | "erase" | "abort";
   packageName: string;
   projectName: string;
   template: Template;
@@ -50,11 +50,17 @@ export const promptConfig = async (argv: Argv): Promise<Config> => {
         name: "overwrite",
         message: () =>
           (targetDir === "." ? "Current directory" : `Target directory "${targetDir}"`) +
-          ` is not empty. Remove existing files and continue?`,
+          ` is not empty. Ignore existing files and continue?`,
+        initial: 0,
+        choices: [
+          { title: "Ignore existing files and continue", value: "ignore" },
+          { title: "Erase existing files and continue", value: "erase" },
+          { title: "Abort", value: "abort" },
+        ],
       },
       {
-        type: (_, { overwrite }: { overwrite?: boolean }) => {
-          if (overwrite === false) {
+        type: (_, { overwrite }: { overwrite?: Config["overwrite"] }) => {
+          if (overwrite === "abort") {
             throw new Error(red("✖") + " Operation cancelled");
           }
           return null;
@@ -106,7 +112,7 @@ export const promptConfig = async (argv: Argv): Promise<Config> => {
   );
 
   const defaults: Partial<Config> = {
-    overwrite: false,
+    overwrite: "ignore",
     template: hasValidArgTemplate
       ? TEMPLATES.find(
           ({ name, variants }) =>

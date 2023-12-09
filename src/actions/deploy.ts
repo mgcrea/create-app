@@ -17,7 +17,7 @@ export const deployTemplate = (config: Config) => {
 
   const root = path.join(cwd, targetDir);
 
-  if (overwrite) {
+  if (overwrite === "erase") {
     emptyDir(root);
   } else if (!fs.existsSync(root)) {
     fs.mkdirSync(root, { recursive: true });
