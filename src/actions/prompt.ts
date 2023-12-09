@@ -27,8 +27,6 @@ export const promptConfig = async (argv: Argv): Promise<Config> => {
   const argTargetDir = formatTargetDir(argv._[0]);
   const argTemplate = argv.template || argv.t;
 
-  console.dir({ argTargetDir, argTemplate });
-
   let targetDir = argTargetDir || defaultTargetDir;
   const hasValidArgTemplate = argTemplate ? TEMPLATE_NAMES.includes(argTemplate) : false;
 
