@@ -16,10 +16,19 @@ do
   --eval)
     eval="$1"
     shift;;
+  --ignore)
+    ignore="$1"
+    shift;;
+  --bail)
+    bail=1
   esac
 done
 
-allTemplates=$(find templates -maxdepth 1 -mindepth 1 -type d | awk -F'/' 'NF!=1{print $2}' | sort -u)
+if [[ -z $ignore ]]; then
+  ignore="none"
+fi
+
+allTemplates=$(find templates -maxdepth 1 -mindepth 1 -type d -not -iname "template-${ignore}*" | awk -F'/' 'NF!=1{print $2}' | sort -u)
 
 for template in ${allTemplates[@]}; do
   cd templates/${template}

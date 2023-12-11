@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prettify": "prettier --write src/ test/",
-    "lint": "eslint src/ test/",
+    "lint": "eslint src/ test/ --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "prettycheck": "prettier --check src/ test/",
     "typecheck": "tsc --noEmit",
     "spec": "vitest --run",
@@ -21,22 +21,21 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@mgcrea/eslint-config-react": "^0.9.3",
+    "@mgcrea/eslint-config-react": "^0.9.4",
     "@testing-library/dom": "^9.3.3",
-    "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.1",
     "@tsconfig/vite-react": "^2.0.1",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
-    "@types/testing-library__jest-dom": "^5.14.9",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^8.55.0",
     "happy-dom": "^12.10.3",
-    "prettier": "^3.1.0",
+    "prettier": "^3.1.1",
     "prettier-plugin-organize-imports": "^3.2.4",
     "typescript": "^5.3.3",
     "vite": "^5.0.7",
-    "vitest": "^1.0.3"
+    "vitest": "^1.0.4",
+    "vitest-dom": "^0.1.1"
   }
 }

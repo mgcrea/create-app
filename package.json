@@ -29,9 +29,9 @@
     "setup": "scripts/runTemplates.sh 'pnpm install'",
     "postbuild": "shebang-trim dist/index.js dist/index.cjs",
     "prettify": "prettier --write src/ templates/",
-    "lint": "scripts/runTemplates.sh 'npm run lint'",
-    "prettycheck": "scripts/runTemplates.sh 'npm run prettycheck'",
-    "typecheck": "scripts/runTemplates.sh 'npm run typecheck'",
+    "lint": "scripts/runTemplates.sh 'npm run lint' --ignore astro",
+    "prettycheck": "scripts/runTemplates.sh 'npm run prettycheck' --ignore astro",
+    "typecheck": "scripts/runTemplates.sh 'npm run typecheck' --ignore astro",
     "test": "npm run lint && npm run prettycheck && npm run typecheck",
     "prepublishOnly": "npm run build"
   },

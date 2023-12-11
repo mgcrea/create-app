@@ -1,6 +1,5 @@
 {
   "extends": "@tsconfig/vite-react/tsconfig.json",
-  "references": [{ "path": "./tsconfig.node.json" }],
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
@@ -8,5 +7,6 @@
       "test/*": ["./test/*"]
     }
   },
-  "include": ["src", "test"]
+  "include": ["src", "test"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
