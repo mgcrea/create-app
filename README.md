@@ -45,10 +45,14 @@ yarn create @mgcrea/app
 
 Currently supported template presets include:
 
-- `nodejs-ts`
+- `astro-ts`
 - `fastify-ts`
-- `react-ts`
+- `hono-bun-ts`
+- `hono-nodejs-ts`
+- `nodejs-lib-ts`
+- `nodejs-ts`
 - `react-native-ts`
+- `react-ts`
 
 ## Authors
 
