@@ -62,6 +62,11 @@ export const TEMPLATES: Template[] = [
         color: blue,
       },
       {
+        name: "hono-worker-ts",
+        display: "Cloudflare worker & TypeScript",
+        color: blue,
+      },
+      {
         name: "hono-nodejs-ts",
         display: "Node.js & TypeScript",
         color: blue,

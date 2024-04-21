@@ -1,8 +1,11 @@
 # Logs
 logs
 *.log
-*-debug.log*
-*-error.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # Artefacts
 .wrangler
@@ -22,7 +25,3 @@ dist-ssr
 *.sln
 *.sw?
 .env
-
-# Custom
-node-project/
-templates/*/pnpm-lock.yaml
