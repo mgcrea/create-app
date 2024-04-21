@@ -1,17 +1,11 @@
 import { Hono } from "hono";
-import { PACKAGE_NAME, PACKAGE_VERSION } from "./config/env";
+import { logger } from "hono/logger";
+import { prettyJSON } from "hono/pretty-json";
+import { baseRoutes, usersRoutes } from "./routes";
 
-export const app = new Hono();
-
-app.get("/", (c) => {
-  return c.json({ data: "Hello 🌎!" });
-});
-
-app.get("/version", (c) => {
-  return c.json({ name: PACKAGE_NAME, version: PACKAGE_VERSION });
-});
-
-app.get("/healthz", (c) => {
-  c.status(200);
-  return c.body(null);
-});
+export const app = new Hono()
+  .use(logger())
+  .use(prettyJSON())
+  .notFound((c) => c.json({ message: "Not Found", success: false }, 404))
+  .route("/", baseRoutes)
+  .route("/users", usersRoutes);
