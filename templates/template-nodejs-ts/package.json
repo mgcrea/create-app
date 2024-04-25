@@ -8,7 +8,8 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "main": "./dist/index.js",
@@ -19,7 +20,7 @@
   "scripts": {
     "start": "tsx src/index.ts",
     "dev": "tsx --inspect --watch src/index.ts",
-    "build": "tsup src/index.ts --format esm --sourcemap --dts --clean",
+    "build": "tsup --format esm --sourcemap --dts --clean --entry src/index.ts --entry src/bin/cli.ts",
     "preview": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
     "prettify": "prettier --write src/ test/",
     "lint": "eslint src/ test/",

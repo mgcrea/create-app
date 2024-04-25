@@ -41,17 +41,17 @@
     "@tsconfig/node-lts": "^20.1.3",
     "@tsconfig/strictest": "^2.0.5",
     "@types/minimist": "^1.2.5",
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.7",
     "@types/prompts": "^2.4.9",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
-    "release-it": "^17.1.1",
+    "release-it": "^17.2.0",
     "rimraf": "^5.0.5",
     "shebang-trim": "^1.2.0",
     "tsup": "^8.0.2",
-    "tsx": "^4.7.1",
-    "typescript": "^5.4.3"
+    "tsx": "^4.7.3",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "kolorist": "^1.8.0",
