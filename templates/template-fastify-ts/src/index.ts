@@ -1,9 +1,6 @@
-import { fileURLToPath } from "node:url";
+import { NODE_HOST, NODE_PORT } from "./config/env";
 import { createServer } from "./server";
 
-export const server = await createServer();
+const server = await createServer();
 
-export default server.handler;
-
-const isMain = process.argv[1] === fileURLToPath(import.meta.url);
-await server.start(isMain);
+await server.app.listen({ host: NODE_HOST, port: NODE_PORT });

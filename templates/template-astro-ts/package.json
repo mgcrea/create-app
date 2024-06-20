@@ -14,16 +14,16 @@
     "test": "npm run typecheck && npm run lint && npm run prettycheck"
   },
   "dependencies": {
-    "astro": "^4.5.12"
+    "astro": "^4.11.0"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.5.10",
-    "@mgcrea/eslint-config-astro": "^0.10.1",
+    "@astrojs/check": "^0.7.0",
+    "@mgcrea/eslint-config-astro": "^0.10.3",
     "eslint": "^8.57.0",
-    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-astro": "^0.14.0",
     "prettier-plugin-organize-imports": "^3.2.4",
-    "prettier": "^3.2.5",
-    "sharp": "^0.33.3",
-    "typescript": "^5.4.3"
+    "prettier": "^3.3.2",
+    "sharp": "^0.33.4",
+    "typescript": "^5.4.5"
   }
 }
