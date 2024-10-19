@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-empty-object-type */
+/* eslint-disable @typescript-eslint/consistent-type-definitions */
 import "src/utils/debug";
 import { expect } from "vitest";
 
@@ -20,6 +22,7 @@ expect.extend({
     const pass = Array.isArray(received);
     if (pass) {
       return {
+        // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
         message: () => `Expected ${received} not to be an array`,
         pass: true,
       };

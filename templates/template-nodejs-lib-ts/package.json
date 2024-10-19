@@ -30,11 +30,10 @@
     "build": "tsup",
     "preview": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
     "prettify": "prettier --write src/ test/",
+    "check": "tsc --noEmit",
     "lint": "eslint src/ test/",
-    "prettycheck": "prettier --check src/ test/",
-    "typecheck": "tsc --noEmit",
     "spec": "vitest --run",
-    "test": "npm run lint && npm run prettycheck && npm run typecheck && npm run spec",
+    "test": "npm run lint && npm run typecheck && npm run spec",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {

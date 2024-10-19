@@ -16,29 +16,29 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-native": "0.74.2"
+    "react-native": "0.75.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
-    "@babel/runtime": "^7.24.7",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/runtime": "^7.25.7",
     "@jest/globals": "^29.7.0",
-    "@mgcrea/eslint-config-react-native": "^0.10.3",
-    "@react-native/metro-config": "^0.74.84",
+    "@mgcrea/eslint-config-react-native": "^0.12.12",
+    "@react-native/metro-config": "^0.75.4",
     "@testing-library/jest-native": "^5.4.3",
-    "@testing-library/react-native": "^12.5.1",
+    "@testing-library/react-native": "^12.7.2",
     "@tsconfig/react-native": "^3.0.5",
-    "@types/jest": "^29.5.12",
-    "@types/react": "^18.3.3",
+    "@types/jest": "^29.5.13",
+    "@types/react": "^18.3.11",
     "@types/react-test-renderer": "^18.3.0",
     "babel-jest": "^29.7.0",
     "babel-plugin-tsconfig-paths": "^1.0.3",
-    "eslint": "^8.57.0",
+    "eslint": "^9.13.0",
     "jest": "^29.7.0",
     "metro-react-native-babel-preset": "^0.77.0",
-    "prettier": "^3.3.2",
-    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
     "react-test-renderer": "^18.3.1",
-    "typescript": "^5.4.5"
+    "typescript": "^5.6.3"
   }
 }

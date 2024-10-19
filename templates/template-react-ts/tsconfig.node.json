@@ -7,5 +7,5 @@
     "skipLibCheck": true,
     "strictNullChecks": true
   },
-  "include": ["vite.config.ts", "eslint.config.js", ".prettierrc.js"]
+  "include": ["*.ts", "*.js"]
 }
