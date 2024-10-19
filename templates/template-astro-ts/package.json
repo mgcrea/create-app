@@ -8,9 +8,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "lint": "eslint src/",
-    "prettify": "prettier -w src/ --plugin=prettier-plugin-astro",
-    "typecheck": "tsc --noEmit",
-    "prettycheck": "prettier -c src/ --plugin=prettier-plugin-astro",
+    "prettify": "prettier --write src/ test/",
+    "check": "tsc --noEmit",
     "test": "npm run typecheck && npm run lint && npm run prettycheck"
   },
   "dependencies": {
