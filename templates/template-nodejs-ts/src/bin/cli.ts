@@ -4,6 +4,7 @@ import { getRandomInt } from "src/utils";
 
 const [action = "help", ...args] = process.argv.slice(2);
 
+// eslint-disable-next-line @typescript-eslint/require-await
 const main = async () => {
   switch (action) {
     case "random": {
@@ -18,4 +19,4 @@ const main = async () => {
   }
 };
 
-main();
+void main();

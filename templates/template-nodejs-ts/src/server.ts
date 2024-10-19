@@ -5,6 +5,7 @@ export type ServerOptions = {
   port?: number;
 };
 
+// eslint-disable-next-line @typescript-eslint/require-await
 export const createServer = async (options: ServerOptions = {}) => {
   const port = options.port ?? 3000;
 
