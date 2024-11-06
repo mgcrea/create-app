@@ -21,7 +21,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@mgcrea/eslint-config-react": "^0.12.15",
+    "@mgcrea/eslint-config-react": "^0.12.16",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",

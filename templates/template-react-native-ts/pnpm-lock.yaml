@@ -28,8 +28,8 @@ importers:
         specifier: ^29.7.0
         version: 29.7.0
       '@mgcrea/eslint-config-react-native':
-        specifier: ^0.12.15
-        version: 0.12.15(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)
+        specifier: ^0.12.16
+        version: 0.12.16(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)
       '@react-native/metro-config':
         specifier: ^0.76.1
         version: 0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))
@@ -972,11 +972,11 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@mgcrea/eslint-config-react-native@0.12.15':
-    resolution: {integrity: sha512-Zp9Ne5G1Gf82LqtGXnk98h193xLnYvwYtYcEtSdG3bt2xk8uNrSajOoSbcWatNGL2RBQ8QnrQFB3A8Kmvxs3WQ==}
+  '@mgcrea/eslint-config-react-native@0.12.16':
+    resolution: {integrity: sha512-qOWRP8kEZUTfRuZpEOO8TfLkxEQU7IjJ6Dhe68qx1B2dnZNgxKOhsFoN86iCNwjOkUywG71BD8USfEVAm1AaPw==}
 
-  '@mgcrea/eslint-config-react@0.12.15':
-    resolution: {integrity: sha512-dkrshHYx8S7snUlPmgBE1E1rZ5bFJyh0Y8578qF9dFtAnAjA0o60Wcfc/qJYxGpOev7CUYd/01ftcRabbTnX0w==}
+  '@mgcrea/eslint-config-react@0.12.16':
+    resolution: {integrity: sha512-2PkPLvQfctEF0QZYl06XEKl93F3hsCx3TQvz9MFQIt2cz4dTZOkObuXHX6w5jDe5utXAPlPQkNNU1d9dHOIdnw==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -4719,10 +4719,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@mgcrea/eslint-config-react-native@0.12.15(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)':
+  '@mgcrea/eslint-config-react-native@0.12.16(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)':
     dependencies:
       '@eslint/compat': 1.2.2(eslint@9.14.0)
-      '@mgcrea/eslint-config-react': 0.12.15(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)
+      '@mgcrea/eslint-config-react': 0.12.16(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)
       '@react-native/eslint-plugin': 0.76.1
     transitivePeerDependencies:
       - '@types/eslint'
@@ -4733,7 +4733,7 @@ snapshots:
       - typescript
       - vitest
 
-  '@mgcrea/eslint-config-react@0.12.15(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)':
+  '@mgcrea/eslint-config-react@0.12.16(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)':
     dependencies:
       '@eslint/compat': 1.2.2(eslint@9.14.0)
       '@vitest/eslint-plugin': 1.1.7(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(typescript@5.6.3)

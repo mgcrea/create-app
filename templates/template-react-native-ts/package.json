@@ -23,7 +23,7 @@
     "@babel/preset-env": "^7.26.0",
     "@babel/runtime": "^7.26.0",
     "@jest/globals": "^29.7.0",
-    "@mgcrea/eslint-config-react-native": "^0.12.15",
+    "@mgcrea/eslint-config-react-native": "^0.12.16",
     "@react-native/metro-config": "^0.76.1",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^12.8.1",

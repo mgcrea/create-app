@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@mgcrea/eslint-config-node':
-        specifier: ^0.12.15
-        version: 0.12.15(@types/eslint@9.6.1)(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)(vitest@2.1.4(@types/node@22.9.0))
+        specifier: ^0.12.16
+        version: 0.12.16(@types/eslint@9.6.1)(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)(vitest@2.1.4(@types/node@22.9.0))
       '@microsoft/api-extractor':
         specifier: ^7.47.11
         version: 7.47.11(@types/node@22.9.0)
@@ -558,8 +558,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@mgcrea/eslint-config-node@0.12.15':
-    resolution: {integrity: sha512-b6LI8i0KQb3DdjunF3/Hcu9LnHZCtAONO6kx0FiGSvpQ7LOxZVM4f79b41Vk1uLlhnmDMUAoZGZMQIrBeqXkTw==}
+  '@mgcrea/eslint-config-node@0.12.16':
+    resolution: {integrity: sha512-UJBDeVMpEXhDR1c5NEY7TxfAG3t3mhe+bgHTSQkirKHu3BowuXifIrgvOe60WqfR8J2ZcHPVGf2/SJ99SiCnDw==}
 
   '@microsoft/api-extractor-model@7.29.8':
     resolution: {integrity: sha512-t3Z/xcO6TRbMcnKGVMs4uMzv/gd5j0NhMiJIGjD4cJMeFJ1Hf8wnLSx37vxlRlL0GWlGJhnFgxvnaL6JlS+73g==}
@@ -2102,7 +2102,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@mgcrea/eslint-config-node@0.12.15(@types/eslint@9.6.1)(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)(vitest@2.1.4(@types/node@22.9.0))':
+  '@mgcrea/eslint-config-node@0.12.16(@types/eslint@9.6.1)(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)(vitest@2.1.4(@types/node@22.9.0))':
     dependencies:
       '@eslint/js': 9.14.0
       '@vitest/eslint-plugin': 1.1.7(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(typescript@5.6.3)(vitest@2.1.4(@types/node@22.9.0))

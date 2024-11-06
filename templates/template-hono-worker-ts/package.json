@@ -36,7 +36,7 @@
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.5.24",
     "@cloudflare/workers-types": "^4.20241022.0",
-    "@mgcrea/eslint-config-node": "^0.12.15",
+    "@mgcrea/eslint-config-node": "^0.12.16",
     "@tsconfig/node-lts": "^22.0.0",
     "@tsconfig/strictest": "^2.0.5",
     "@types/eslint": "^9.6.1",

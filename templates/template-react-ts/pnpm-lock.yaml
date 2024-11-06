@@ -16,8 +16,8 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@mgcrea/eslint-config-react':
-        specifier: ^0.12.15
-        version: 0.12.15(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)(vitest@2.1.4(happy-dom@15.10.1))
+        specifier: ^0.12.16
+        version: 0.12.16(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)(vitest@2.1.4(happy-dom@15.10.1))
       '@testing-library/dom':
         specifier: ^10.4.0
         version: 10.4.0
@@ -282,8 +282,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@mgcrea/eslint-config-react@0.12.15':
-    resolution: {integrity: sha512-dkrshHYx8S7snUlPmgBE1E1rZ5bFJyh0Y8578qF9dFtAnAjA0o60Wcfc/qJYxGpOev7CUYd/01ftcRabbTnX0w==}
+  '@mgcrea/eslint-config-react@0.12.16':
+    resolution: {integrity: sha512-2PkPLvQfctEF0QZYl06XEKl93F3hsCx3TQvz9MFQIt2cz4dTZOkObuXHX6w5jDe5utXAPlPQkNNU1d9dHOIdnw==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1886,7 +1886,7 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@mgcrea/eslint-config-react@0.12.15(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)(vitest@2.1.4(happy-dom@15.10.1))':
+  '@mgcrea/eslint-config-react@0.12.16(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)(vitest@2.1.4(happy-dom@15.10.1))':
     dependencies:
       '@eslint/compat': 1.2.2(eslint@9.14.0)
       '@vitest/eslint-plugin': 1.1.7(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(typescript@5.6.3)(vitest@2.1.4(happy-dom@15.10.1))
