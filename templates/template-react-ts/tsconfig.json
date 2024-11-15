@@ -1,12 +1,13 @@
 {
   "extends": "@tsconfig/vite-react/tsconfig.json",
   "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "noUncheckedSideEffectImports": true,
     "baseUrl": "./",
     "paths": {
       "src/*": ["./src/*"],
       "test/*": ["./test/*"]
     }
   },
-  "include": ["src", "test"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "test"]
 }

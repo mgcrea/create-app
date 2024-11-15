@@ -6,10 +6,10 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc -b && vite build",
     "preview": "vite preview",
     "prettify": "prettier --write src/ test/",
-    "lint": "eslint src/ test/ --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint .",
     "prettycheck": "prettier --check src/ test/",
     "check": "tsc --noEmit",
     "spec": "vitest --run",
@@ -21,7 +21,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@mgcrea/eslint-config-react": "^0.12.16",
+    "@mgcrea/eslint-config-react": "^0.12.18",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
@@ -30,12 +30,12 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react-swc": "^3.7.1",
     "eslint": "^9.14.0",
-    "happy-dom": "^15.10.1",
+    "happy-dom": "^15.11.6",
     "prettier": "^3.3.3",
     "prettier-plugin-organize-imports": "^4.1.0",
     "typescript": "^5.6.3",
-    "vite": "^5.4.10",
-    "vitest": "^2.1.4",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.5",
     "vitest-dom": "^0.1.1"
   }
 }

@@ -23,7 +23,7 @@
     "dev": "tsx watch --trace-deprecation --inspect src/index.ts",
     "dev:cli": "tsx watch --trace-deprecation --inspect src/bin/cli.ts",
     "build": "tsup",
-    "preview": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
+    "preview": "node --experimental-specifier-resolution=node --enable-source-maps .",
     "prettify": "prettier --write src/ test/",
     "check": "tsc --noEmit",
     "lint": "eslint src/ test/",
