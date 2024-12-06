@@ -1,6 +1,14 @@
-module.exports = {
+// @ts-check
+
+/**
+ * Jest configuration
+ * @see https://jestjs.io/docs/configuration
+ * @type {import('jest').Config}
+ */
+export default {
   preset: "react-native",
-  setupFilesAfterEnv: ["<rootDir>/test/setup.ts"],
+  snapshotResolver: "./test/snapshotResolver.ts",
+  setupFilesAfterEnv: ["./test/setupAfterEnv.ts"],
   moduleNameMapper: {
     "^src/(.*)$": "<rootDir>/src/$1",
   },

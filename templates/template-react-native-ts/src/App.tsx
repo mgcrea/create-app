@@ -1,52 +1,27 @@
-import React, { FunctionComponent, useState } from "react";
-import { Button, SafeAreaView, ScrollView, StyleSheet, Text, View, useColorScheme } from "react-native";
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from "react-native/Libraries/NewAppScreen";
-import { Section } from "./components/Section";
+import { useState, type FunctionComponent } from "react";
+import { Button, SafeAreaView, Text, TextInput } from "react-native";
 
 export const App: FunctionComponent = () => {
-  const isDarkMode = useColorScheme() === "dark";
+  const [name, setUser] = useState("");
+  const [show, setShow] = useState(false);
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  const [count, setCount] = useState(0);
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <ScrollView contentInsetAdjustmentBehavior="automatic" style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}
-        >
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this screen and then come back to see
-            your edits.
-          </Section>
-          <Button testID="button" title={`count is ${count}`} onPress={() => setCount((count) => count + 1)} />
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">Read the docs to discover what to do next:</Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
+    <SafeAreaView>
+      <TextInput value={name} onChangeText={setUser} testID="input" />
+      <Button
+        title="Print Username"
+        onPress={() => {
+          // let's pretend this is making a server request, so it's async
+          // (you'd want to mock this imaginary request in your unit tests)...
+          setTimeout(
+            () => {
+              setShow(true);
+            },
+            Math.floor(Math.random() * 200),
+          );
+        }}
+      />
+      {show && <Text testID="printed-username">{name}</Text>}
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  highlight: {
-    fontWeight: "700",
-  },
-});
