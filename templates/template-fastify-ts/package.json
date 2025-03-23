@@ -31,24 +31,24 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@fastify/cors": "^10.0.1",
+    "@fastify/cors": "^11.0.0",
     "@mgcrea/fastify-graceful-exit": "^1.2.0",
-    "@mgcrea/fastify-request-logger": "^1.8.0",
-    "@mgcrea/pino-pretty-compact": "^1.3.0",
-    "fastify": "^5.1.0"
+    "@mgcrea/fastify-request-logger": "^1.9.1",
+    "@mgcrea/pino-pretty-compact": "^1.4.2",
+    "fastify": "^5.2.1"
   },
   "devDependencies": {
-    "@mgcrea/eslint-config-node": "^0.12.16",
-    "@tsconfig/node-lts": "^22.0.0",
+    "@mgcrea/eslint-config-node": "^0.13.0",
+    "@tsconfig/node-lts": "^22.0.1",
     "@tsconfig/strictest": "^2.0.5",
-    "@types/node": "^22.9.0",
-    "eslint": "^9.14.0",
-    "prettier": "^3.3.3",
+    "@types/node": "^22.13.11",
+    "eslint": "^9.23.0",
+    "prettier": "^3.5.3",
     "prettier-plugin-organize-imports": "^4.1.0",
-    "tsup": "^8.3.5",
-    "tsx": "^4.19.2",
-    "typescript": "^5.6.3",
-    "vite-tsconfig-paths": "^5.1.0",
-    "vitest": "^2.1.4"
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.0.9"
   }
 }
